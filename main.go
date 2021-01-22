@@ -10,7 +10,7 @@ func handler(w http.ResponseWriter, r *http.Request){
   name, err := os.Hostname()
   if err != nil {
     panic(err)
-    }
+   }
     
     fmt.Fprintln(w, "hostname:", name)
 }
