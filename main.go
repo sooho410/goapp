@@ -14,7 +14,7 @@ func handler(w http.ResponseWriter, r *http.Request){
     
     fmt.Fprintln(w, "hostname:", name)
 }
-func.main() {
+func main() {
   fmt.Fprintln(os.Stdout,"Starting GoApp Server......")
     http.HandleFunc("/",handler)
     log.Fatal(http.ListenAndServe(":8080",nil))
